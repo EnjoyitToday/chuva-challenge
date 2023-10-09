@@ -1,1 +1,17 @@
-<p>sidebar works!</p>
+<div class="whole">
+  <div class="title">
+    <p> SLACA 2019 </p>
+  </div>
+  <div class="logo">
+    <img src="/assets/13SLACALOGO.svg" alt="">
+  </div>
+  <div class="buttons">
+    <div class="button-slot" *ngFor="let button of buttons">
+      <button class="normal-button">
+        <p>
+          {{ button }}
+        </p>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,54 @@
 <div class="whole">
+  <div class="sidebar">
+    <chuva-sidebar></chuva-sidebar>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <div class="topbar-content">
+        <div class="text-topbar-container">
+          <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+          <h2>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h2>
+          <p>ISSN: 1234-5678</p>
+        </div>
+        <div class="language-button-container">
+          <select name="gender" id="gender-select" formControlName="gender">
+            <option value="00" disabled selected>PT,BR</option>
+            <option value="Masculino">EN,US</option>
+          </select>
+        </div>
+        <div class="user-button-container">
+          <div class="user-button-content">
+            <div class="user-texts">
+              <div class="welcome-text">
+                <p> Bem Vindo!</p>
+              </div>
+              <div class="email-text">
+                <p>
+                  {{ this.userService.userLogged.email}}
+                </p>
+              </div>
+            </div>
+            <div class="user-photo">
+              <img src="{{ this.userService.userLogged.photo}}" alt="">
+              <div class="notifications">
+                <p>{{ this.userService.userLogged.notifications }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
 
+    </div>
+    <div class="resume-container">
+
+    </div>
+    <div class="discussion-container">
+
+    </div>
+    <div class="footer">
+
+    </div>
+  </div>
 </div>

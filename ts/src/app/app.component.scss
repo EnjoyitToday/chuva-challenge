@@ -1,5 +1,141 @@
 .whole{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar{
+  width: 15%;
+  height: 100%;
+}
+
+.main{
+  width: 85%;
+  height: 100%;
+}
+
+.topbar{
+  width: 100%;
+  height: 8vh;
+  background-color: #FDF1EB;
+  display: flex;
+  justify-content: end;
+}
+
+.topbar-content{
+  height: 100%;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-topbar-container{
+  height: 100%;
+  width: 65%;
+  color: #725C5C;
+}
+
+.text-topbar-container h2{
+  font-weight: 400;
+  font-size: 2.5vh;
+}
+
+.text-topbar-container p{
+  font-size: 1.75vh;
+}
+
+.language-button-container{
+  height: 80%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gender-select{
+  width: 100%;
+  height: 70%;
+  outline: none;
+  margin: 0;
+  border: 2px solid #D0D0D0;
+  border-radius: 4px;
+  font-size: large;
+  color: #818181;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.user-button-container{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.user-button-content{
+  width: 95%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.user-texts{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.welcome-text{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-text{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-photo{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.user-photo img{
+  height: 100%;
+  width: 100%;
+  border-radius: 99999px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.notifications{
+  position: absolute;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 99999px;
   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications p {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5vh;
 }
