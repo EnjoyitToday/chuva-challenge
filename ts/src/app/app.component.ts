@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { UserService } from './services/user.service';
+import { AuthorsService } from './services/authors.service';
+import { UniversityService } from './services/university.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,9 @@ export class AppComponent {
   title = 'DevChuva';
 
   constructor(
-    public userService:UserService
+    public userService:UserService,
+    public authorsService:AuthorsService,
+    public universityService:UniversityService
   ){}
 
 }

@@ -39,7 +39,7 @@
   background-color: #E7E7E7;
   display: flex;
   flex-direction: column;
-  justify-content:space-around
+  justify-content:space-around;
 }
 
 .button-slot{
@@ -49,6 +49,7 @@
   justify-content: end;
   align-items: center;
   background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+
 }
 
 .normal-button{
@@ -70,6 +71,7 @@
   color: #725C5C;
   font-weight: 600;
   font-size: 2vh;
+  font-family: Quicksand;
 }
 
 .normal-button:hover{

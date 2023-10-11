@@ -39,11 +39,60 @@
       </div>
     </div>
     <div class="video-container">
-      <div class="video">
-        <h2></h2>
-      </div>
-      <div class="side-container">
+      <div class="video-container-content">
+        <div class="video">
+          <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
+          <div class="video-box">
+            <video src="/assets/video.mp4" controls>
+            </video>
+          </div>
+        </div>
+        <div class="side-container">
+          <div class="side-container-buttons">
+            <div class="side-container-buttons-top">
+              <button class="button-download">
+                <img src="/assets/download.svg" alt="">
+                <p>Download</p>
+              </button>
+              <button class="button-star">
+                <img src="/assets/star.svg" alt="">
+              </button>
+              <button class="button-doi">
+                <img src="/assets/doi.svg" alt="">
+              </button>
+            </div>
+            <div class="side-container-buttons-bot">
+              <p> COMO CITAR ESSE TRABALHO ?</p>
+            </div>
+          </div>
+          <div class="side-container-details">
+            <div class="side-container-details-top-bar">
+              <p>Detalhes</p>
+            </div>
+            <div class="side-container-details-content">
+              <div class="side-container-details-content-specifications">
+                <p>Tipo de Apresentação: <strong>Pôster</strong></p>
+                <p>Eixos Temáticos: <strong>Alimentação e saúde</strong></p>
+                <p>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+              </div>
+              <div class="side-container-details-content-authors">
+                <h2>Autores:</h2>
+                <div class="authors-loop-space">
+                  <div class="authors-loop" *ngFor="let author of this.authorsService.authors">
+                    <p> {{ author.name }} </p><h4>{{author.indicator}}</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="side-container-details-content-university-loop-space">
+                <div class="university-loop" *ngFor="let university of this.universityService.universities">
+                  <p>{{ university.indicator }}{{ university.name }}</p>
+                </div>
 
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
     <div class="resume-container">
