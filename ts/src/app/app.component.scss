@@ -1,3 +1,7 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .whole{
   height: 100%;
   width: 100%;
@@ -14,6 +18,7 @@
 .main{
   width: 85%;
   height: 100%;
+  overflow-y: auto;
 }
 
 .topbar{
@@ -55,7 +60,7 @@
   justify-content: center;
 }
 
-#gender-select{
+#language-select{
   width: 100%;
   height: 70%;
   outline: none;
@@ -138,4 +143,114 @@
   color: white;
   font-weight: 500;
   font-size: 1.5vh;
+}
+
+.video-container{
+  width: 100%;
+  height: 70vh;
+  // background-color: red;
+  display: flex;
+}
+
+.video{
+  width: 75%;
+  height: 100%;
+  // background-color: blue;
+}
+
+.side-container{
+  width: 25%;
+  height: 100%;
+  // background-color: yellow;
+}
+
+
+.footer{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content{
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+
+.galoa-text{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galoa-text h1{
+  height: 9vh;
+  width: 100%;
+  color:#341947;
+  font-size: 9vh;
+  margin: 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galoa-text p{
+  height: 3vh;
+  width: 100%;
+  color:#71478e;
+  margin: 0;
+  font-size: 2vh;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galoa-text button{
+  background-color: #71478e;
+  color:white;
+  height: 5vh;
+  width:70% ;
+  font-size: 2vh;
+  border: none;
+  border-radius: 5px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.footer-text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-text{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+.top-text strong{
+  color: #5c5c5c;
+  font-weight: 600;
+}
+
+.bottom-text{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+  font-weight: 400;
 }
