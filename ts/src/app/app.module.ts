@@ -20,7 +20,7 @@ import { DiscussionModule } from './discussion/discussion.module';
     FooterModule,
     VideoContainerModule,
     ResumeModule,
-    DiscussionModule
+    DiscussionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

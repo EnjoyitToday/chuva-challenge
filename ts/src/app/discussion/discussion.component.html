@@ -1,1 +1,100 @@
-<p>discussion works!</p>
+<div class="discussion-area">
+  <div class="discussion-box">
+    <div class="discussion-title">
+      <p>Discussão</p>
+    </div>
+    <div class="topcontent" id="topcontent">
+      <div class="text-top-topcontent">
+        <p >Compartilhe suas ideias com outros autores</p>
+      </div>
+      <div class="images">
+        <img src="/assets/maozinha.svg" alt="">
+        <img src="/assets/qa.svg" alt="">
+        <img src="/assets/pessoinhas.svg" alt="">
+      </div>
+      <div class="text-bot-topcontent">
+        <p >Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+      </div>
+      <div class="button-space">
+        <button class='btn-create-topic' (click)="createTopic()">criar tópico</button>
+      </div>
+    </div>
+    <div class="create-topic" id="create-topic">
+      <div class="create-topic-top-text">
+        <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+      </div>
+      <form class="labels" [formGroup]="this.form">
+        <div class="label-subject">
+          <p>Assunto</p>
+          <input placeholder="Defina um tópico sucinto aos autores" type="text" formControlName="subject">
+        </div>
+        <div class="label-content" >
+          <div class="content-text-container">
+            <p>Conteúdo</p>
+          </div>
+          <div class="input-content-container">
+            <input class="input-content" type="text" formControlName="content" >
+          </div>
+          <div class="input-author-container">
+            <input class="input-author" type="text" name="" id="" formControlName="author">
+          </div>
+          <div class="button-container">
+            <button (click)="submit()" >Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="discussion-loop-space">
+      <div class="discussion-loop"*ngFor="let discussion of this.discussionService.discussions">
+        <div class="discussion-card" >
+          <div class="discussion-subject">
+            <p>{{ discussion.subject }}</p>
+          </div>
+          <div class="discussion-author">
+            <p>{{ discussion.author }}</p>
+          </div>
+          <div class="discussion-message">
+            <p>{{ discussion.message }}</p>
+          </div>
+          <div class="discussion-footer">
+            <div class="discussion-footer-content">
+              <div class="points">
+                <button>
+                  <img src="/assets/points.svg" alt="">
+                </button>
+              </div>
+              <div class="like-button">
+                <button (click)="likeDiscuss(discussion)">
+                  <img src="/assets/like.svg" alt="">
+                </button>
+              </div>
+              <div class="like-qnt">
+                <div *ngIf="discussion.likes > 1">
+                  <p>{{ discussion.likes }} likes</p>
+                </div>
+                <div *ngIf="discussion.likes <= 1">
+                  <p>{{ discussion.likes }} like</p>
+                </div>
+              </div>
+              <div class="replies-qnt">
+                <div *ngIf="discussion.replies.length > 1">
+                  <p>{{ discussion.replies.length }} respostas</p>
+                </div>
+                <div *ngIf="discussion.replies.length <= 1">
+                  <button (click)="toggleReplies()">
+                    <p>{{ discussion.replies.length }} resposta</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="replies" *ngIf="this.showReplies">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
