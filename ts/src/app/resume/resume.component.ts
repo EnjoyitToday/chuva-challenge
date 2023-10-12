@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'chuva-resume',
@@ -10,6 +10,9 @@ export class ResumeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  initToggle(e:any){
   }
 
 }
